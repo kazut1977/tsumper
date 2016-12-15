@@ -21,6 +21,23 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/fragment_new_bk" />
+    <!--
+    <fragment
+        android:name="com.silverlong.tsumper.NewFragment"
+        android:id="@+id/fragment_new"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+
+    元
+    <include layout="@layout/fragment_new" />
+        -->
+    <FrameLayout
+        android:id="@+id/main_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
 
 </android.support.design.widget.CoordinatorLayout>
